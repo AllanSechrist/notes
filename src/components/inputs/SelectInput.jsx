@@ -1,4 +1,4 @@
-const SelectInput = ({label, name, value, OnChange, required=false, options}) => {
+const SelectInput = ({label, name, value, onChange, options}) => {
   return (
     <div className="mb-4">
       <label htmlFor={name} className="block font-semibold">
@@ -8,8 +8,7 @@ const SelectInput = ({label, name, value, OnChange, required=false, options}) =>
         name={name}
         className="w-full p-2 border rounded-lg"
         value={value}
-        onChange={OnChange}
-        required={required}
+        onChange={onChange}
         >
           {options.map((option) =>
             <option key={ option.value } value={option.value}>{option.label}</option>

@@ -58,7 +58,6 @@ const NoteForm = ({notes, setNotes}) => {
           name="priority"
           value={formData.priority}
           onChange={handleChange}
-          required
           options={[
             {value: 'High', label: 'High'},
             {value: 'Medium', label: 'Medium'},
@@ -70,7 +69,6 @@ const NoteForm = ({notes, setNotes}) => {
           name="category"
           value={formData.category}
           onChange={handleChange}
-          required
           options={[
             {value: 'Work', label: 'Work'},
             {value: 'Personal', label: 'Personal'},
